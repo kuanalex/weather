@@ -3,12 +3,15 @@ async function getWeather() {
         mode: 'cors'
     });
     const weatherData = await response.json();
-    console.log(weatherData);
 
     let data = {
-        temp: weatherData.main.temp;
-
+        temp: weatherData.main.temp,
+        feelslike: weatherData.main.feels_like,
+        humidity: weatherData.main.humidity,
+        wind: weatherData.wind.speed
     }
+
+    console.log(data);
 
 }
 
