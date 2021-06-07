@@ -1,0 +1,146 @@
+:root {
+    --primary-light: #faf3e0;
+    --secondary-light: #acb4f4;
+    --primary-dark: #1e212d;
+    --secondary-dark: #6870e0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+/* Body Section */
+
+body {
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Header Section */
+
+header {
+    padding: 1rem;
+    font-size: 3rem;
+    background-color: #3A3B3C;
+
+}
+
+/* Main Section */
+
+button,
+input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.main {
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.form {
+    padding: 1rem;
+    text-align: center;
+}
+
+.input {
+    margin-right: 0.5rem;
+    background-color: var(--secondary-light);
+    color: var(--primary-dark);
+    border: 2px solid transparent;
+}
+
+.btn {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    transition: border 0.2s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    border: 2px solid var(--secondary-light);
+}
+
+.btn:active {
+    color: #999;
+}
+
+.search-result {
+    display: none;
+    max-width: 300px;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 4rem auto;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-result.active {
+    display: block;
+}
+
+.search-result * {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.search-result h3 {
+    border-radius: 5px;
+    color: var(--secondary-light);
+    font-size: 4rem;
+}
+
+.search-result p:nth-child(2) {
+    font-size: 3.6rem;
+}
+
+.search-result p {
+    font-size: 2rem;
+}
+
+/* Footer Section */
+
+footer {
+    padding: 1.5rem;
+    font-size: 2rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* General Section */
+
+h1 {
+    color: lightgray;
+}
+
+a {
+    color: darkgray;
+}
+
+a:hover {
+    color: #fff;
+
+}
